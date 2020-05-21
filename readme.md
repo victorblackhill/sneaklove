@@ -24,7 +24,7 @@ So you won't have to deal that much with HTML/CSS ( Ahhh... this is perfect ; )
 
 - logged in users are able to delete some products
 
-- don't mess up the design
+- don't mess up the design !!!
 
 ---
 
