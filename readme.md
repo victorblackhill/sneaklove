@@ -47,26 +47,26 @@ So you won't have to deal that much with HTML/CSS ( Ahhh... this is perfect ; )
 
 ## DB Schemas
 
-- User {
-  name: String,
-  lastname: String,
-  email: String,
-  password: String
+- User {  
+  name: String,  
+  lastname: String,  
+  email: String,  
+  password: String  
+  }  
+
+- Sneaker {  
+  name: String,  
+  ref: String,  
+  size: Number,  
+  description: String,  
+  price: Number,  
+  category: String [men, women, kids],  
+  id_tags: [ObjectId]  
   }
 
-- Sneaker {
-  name: String,
-  ref: String,
-  size: Number,
-  description: String,
-  price: Number,
-  category: String [men, women, kids],
-  id_tags: [ObjectId]
-  }
-
-- Tags {
-  label: String
-  }
+- Tags {  
+  label: String  
+  }  
 
 ---
 
