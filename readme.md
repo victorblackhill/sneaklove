@@ -24,11 +24,7 @@ So you won't have to deal that much with HTML/CSS ( Ahhh... this is perfect ; )
 
 - logged in users are able to delete some products
 
-<<<<<<< HEAD
 - don't mess up the design !!!
-=======
-- **don't mess up the design !!!**
->>>>>>> 45009f99de5acfe11da92847e64154e8ec4f8f45
 
 ---
 
@@ -45,11 +41,7 @@ So you won't have to deal that much with HTML/CSS ( Ahhh... this is perfect ; )
 - women : display only women products
 - men : display only women products
 
-<<<<<<< HEAD
 (see bonus below)
-=======
-(see bonuses below)
->>>>>>> 45009f99de5acfe11da92847e64154e8ec4f8f45
 
 ---
 
@@ -92,12 +84,8 @@ So you won't have to deal that much with HTML/CSS ( Ahhh... this is perfect ; )
 ## Delivery
 
 Each team will deliver their code on a github repo
-<<<<<<< HEAD
 Before wednesday 26/05/2020 00h00
 Code delivered or modified after the due date will get malus points
-=======
-Before friday 2020/12/11 12h00
->>>>>>> 45009f99de5acfe11da92847e64154e8ec4f8f45
 
 ---
 
