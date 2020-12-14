@@ -1,12 +1,21 @@
 const express = require("express");
 const router = express.Router();
 
+<<<<<<< HEAD
 return console.log(`
 -----------------------------
 -----------------------------
 node says : wax on / wax off !
 -----------------------------
 -----------------------------`
+=======
+return console.log(`\n\n
+-----------------------------
+-----------------------------
+     wax on / wax off !
+-----------------------------
+-----------------------------\n\n`
+>>>>>>> 45009f99de5acfe11da92847e64154e8ec4f8f45
 );
 
 router.get("/", (req, res) => {
