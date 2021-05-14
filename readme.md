@@ -84,8 +84,7 @@ So you won't have to deal that much with HTML/CSS ( Ahhh... this is perfect ; )
 ## Delivery
 
 Each team will deliver their code on a github repo
-Before wednesday 26/05/2020 00h00
-Code delivered or modified after the due date will get malus points
+Before today, ed of the day
 
 ---
 
