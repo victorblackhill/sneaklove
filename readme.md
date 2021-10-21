@@ -84,7 +84,6 @@ So you won't have to deal that much with HTML/CSS ( Ahhh... this is perfect ; )
 ## Delivery
 
 Each team will deliver their code on a github repo
-Before today, ed of the day
 
 ---
 
