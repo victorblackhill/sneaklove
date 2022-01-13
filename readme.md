@@ -91,7 +91,7 @@ Each team will deliver their code on a github repo
 
 - 1 make the shop responsive with flex and media-queries
 
-- 2 add some custom categories @ /prod-add
+- 2 add some custom tag @ /prod-add
 
 - 3 code the products filters using the AJAX method
 
