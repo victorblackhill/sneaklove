@@ -20,7 +20,7 @@ app.use(logger("dev"));
 
 // initial config
 app.set("view engine", "hbs");
-app.set("views", __dirname + "/view");
+app.set("views", __dirname + "/views");
 app.use(express.static("public"));
 hbs.registerPartials(__dirname + "/views/partials");
 app.use(express.urlencoded({ extended: false }));
@@ -57,7 +57,9 @@ app.use(require("./middlewares/exposeLoginStatus")); // expose le status de conn
 app.use(require("./middlewares/exposeFlashMessage")); // affiche les messages dans le template
 
 // routers
-app.use("/", require("./routes/index"));
+app.use("/", require("./routes/index.js"));
+app.use("/auth",require("./routes/auth.js"))
+//app.use("/dashboard",require("./routes/dashboard_sneaker.js"))
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
