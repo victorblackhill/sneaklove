@@ -1,7 +1,8 @@
 const express = require("express");
 const router = new express.Router();
-
+const TagModel = require("./../models/Tag")
 const SneakerModel = require("./../models/Sneaker")
+const fileUploader = require("./../config/cloudinary")
 
 console.log(`\n\n
 -----------------------------
@@ -78,23 +79,40 @@ const deleteProduct = async (req,res,next)=>{
     const deleted = await SneakerModel.findByIdAndDelete(req.params.id)
     console.log("deleted:>>>>>>>>>", deleted)
     req.flash("warning","Removed the following sneaker > > > > " + deleted.name)
-    res.redirect("/product-manage")
+    res.redirect("/prod-manage")
   }catch(err){
     next(err)
   }
 
 }
 
-const renderAdd = (req,res,next)=>{
+const renderAdd = async (req,res,next) => {
+  try{
+      const tags = await TagModel.find()
+      console.log(">>>>>>>>>",tags)
+      res.render("products_add.hbs",{tags})
+  }catch(err){
+      next(err)
+  }
+}
 
-  res.render("products_add.hbs")
+const createSneaker = async (req,res,next)=>{
+
+  try{
+    if(req.file){req.body.picture = req.file.path}
+    const createdSneaker = await SneakerModel.create(req.body)
+    req.flash("warning","Added the following sneaker > > > > " + createdSneaker.name)
+    res.redirect("/prod-manage")
+  }catch(err){
+    next(err)
+  }
 
 }
 
 // Helper 
 
 const renderRequest = (req,res,next)=>{
-  console.log(req.body)
+  //console.log(req.body, req.file.path)
   res.send(req.body)
 }
 
@@ -115,6 +133,8 @@ router.get("/signup", renderSignup);
 router.get("/signin", renderSignin);
 
 router.get("/prod-add",renderAdd)
+
+router.post("/prod-add",fileUploader.single("image"),createSneaker,renderRequest)
 
 router.get("/product-edit/:id",renderRequest)
 

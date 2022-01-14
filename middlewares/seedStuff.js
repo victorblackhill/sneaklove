@@ -4,9 +4,9 @@ require("./../config/mongodb")
 const mongoose = require("mongoose")
 //plug to the DB require(".")
 
+
+
 const seedStuff = async (seeds,myModel)=>{
-
-
 
     try{
         const deleted = await myModel.deleteMany()

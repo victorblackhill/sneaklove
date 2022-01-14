@@ -17,6 +17,7 @@ const sneakerSeed = [
         size: 37 ,
         price : 80 ,
         category : "women",
+        sneakertag:["61e185af0be64a578c94fa24"]
             },
     {
         name: "thirdShoe",
@@ -25,16 +26,17 @@ const sneakerSeed = [
         price : 40 ,
         category : "kids",
         picture : "https://res.cloudinary.com/blackhilldev/image/upload/c_thumb,w_200,g_face/v1642089465/shoes/chaussure_htlrfr.png",
-        sneakertag: ["61e045ead7490b107f1b35b6","61e045ead7490b107f1b35b7"]       
+        sneakertag: ["61e185af0be64a578c94fa21","61e185af0be64a578c94fa23"]       
     }
 
 ]   
 
 /*
-{ _id: 61e045ead7490b107f1b35b6, label: 'fashion', __v: 0 },
-{ _id: 61e045ead7490b107f1b35b7, label: 'old-school', __v: 0 },
-{ _id: 61e045ead7490b107f1b35b8, label: 'cheap', __v: 0 },
-{ _id: 61e045ead7490b107f1b35b9, label: 'classy', __v: 0 }
+  { _id: 61e185af0be64a578c94fa21, label: 'fashion', __v: 0 },
+  { _id: 61e185af0be64a578c94fa22, label: 'old-school', __v: 0 },
+  { _id: 61e185af0be64a578c94fa23, label: 'cheap', __v: 0 },
+  { _id: 61e185af0be64a578c94fa24, label: 'classy', __v: 0 }
+
 
 - > sur la correction d'artistify ouy sur ce lab
  a) récupérer la liste des id avec un find

@@ -4,7 +4,6 @@ const sneakerSchema = new Schema({
    name:String,
    ref:{
     type:String,
-    unique:true
         },
     size:Number,
     description:String,
